@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coca-Cola Company: Refresh the World. Make a Difference</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="https://www.flaticon.com/free-icons/universe" title="universe icons"></a>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#EEEEEE]">
+    <header class="xl:h-[80px] xl:bg-white xl:fixed xl:top-0 xl:left-0 xl:right-0 xl:border-[1px] xl:border-[#797979] xl:z-10">
+        <nav class="xl:h-full fixed xl:static top-0 bg-white right-0 z-10 left-0 flex items-center justify-end border-[1px] border-b-[#797979] p-[5px] xl:p-0
+        xl:justify-between xl:w-[1240px] xl:mx-auto xl:border-0 xl:cursor-pointer">
+            <div class="mx-auto pl-[35px] xl:mx-0 xl:p-[23px]">
+                <img class="h-8" src="./assets/nav-logo-img.svg" alt="Coca-Cola-LOGO">
+            </div>
+            <div class=" pr-1 pt-2 xl:hidden">
+                <ion-icon onclick="toggle(this)" size="large" name="menu-outline"></ion-icon>
+            </div>
+            <div class="menubar bg-white  xl:h-full absolute xl:static top-[57px] left-0 hidden duration-1000
+            xl:flex xl:mr-auto">
+                <div>
+                    <ul class="xl:flex xl:h-full  font-navbar">
+                        <li class="flex justify-between py-4 px-[19px] w-screen items-center border-[1px] border-b-[#797979]
+                        xl:w-auto xl:border-0 xl:p-[23px] xl:flex xl:items-center xl:hover:bg-[#F40000] xl:hover:text-white"><a href="#">Our Company</a><ion-icon class="xl:hidden" size="small" name="chevron-forward-outline"></ion-icon></li>
+                        <li class="flex justify-between py-4 px-[19px] w-screen items-center border-[1px] border-b-[#797979]
+                        xl:w-auto xl:border-0 xl:p-[23px] xl:flex xl:items-center xl:hover:bg-[#FF550D] xl:hover:text-white"><a href="#">Brands</a><ion-icon class="xl:hidden" size="small" name="chevron-forward-outline"></ion-icon></li>
+                        <li class="flex justify-between py-4 px-[19px] w-screen items-center border-[1px] border-b-[#797979]
+                        xl:w-auto xl:border-0 xl:p-[23px] xl:flex xl:items-center xl:hover:bg-[#69CE7E] xl:hover:text-white"><a href="#">Sustainability</a><ion-icon class="xl:hidden" size="small" name="chevron-forward-outline"></ion-icon></li>
+                        <li class="flex justify-between py-4 px-[19px] w-screen items-center border-[1px] border-b-[#797979]
+                        xl:w-auto xl:border-0 xl:p-[23px] xl:flex xl:items-center xl:hover:bg-[#6AC9CD] xl:hover:text-white"><a href="#">Social</a><ion-icon class="xl:hidden" size="small" name="chevron-forward-outline"></ion-icon></li>
+                        <li class="flex justify-between py-4 px-[19px] w-screen items-center border-[1px] border-b-[#797979]
+                        xl:w-auto xl:border-0 xl:p-[23px] xl:flex xl:items-center xl:hover:bg-[#D7B85B] xl:hover:text-white"><a href="#">Careers</a><ion-icon class="xl:hidden" size="small" name="chevron-forward-outline"></ion-icon></li>
+                        <li class="flex justify-between py-4 px-[19px] w-screen items-center border-[1px] border-b-[#797979]
+                        xl:w-auto xl:border-0 xl:p-[23px] xl:flex xl:items-center xl:hover:bg-[#F79802] xl:hover:text-white"><a href="#">Media Center</a><ion-icon class="xl:hidden" size="small" name="chevron-forward-outline"></ion-icon></li>
+                        <li class="flex justify-between py-4 px-[19px] w-screen items-center border-[1px] border-b-[#797979]
+                        xl:w-auto xl:border-0 xl:p-[23px] xl:flex xl:items-center xl:hover:bg-[#B59E74] xl:hover:text-white"><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="flex pl-2 xl:pl-0 xl:flex items-center">
+                   <div class="xl:ml-[10px] xl:p-[10px] xl:mt-[3px]"><img class="h-[25px] xl:h-[24px] m-[10px] xl:m-0" src="./assets/search-icon.svg" alt="Search-Bar"></div>
+                   <div class="xl:p-[10px]"> <img class="h-[24px] m-[10px] xl:m-0" src="./assets/language.png" alt=""></div>
+                    <div class="xl:p-[10px]"><img class="h-[22px] m-[10px] xl:m-0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-WY6cJO09INEnNRwgDboJddQ613gxX54eig&s" alt="User-Guide"></div>
+                </div>
+            </div>
+        </nav>
+</header>
+<!-- Main -->
+<main class="xl:mt-20 mt-14 mx-6">
+   <!-- Sustainability Goals -->
+   <section>
+       <!-- Heading -->
+       <div class="flex justify-center items-center pt-14"><h2 class="text-center text-2xl font-[600] xl:text-[2rem] font-primary">Our Sustainability Goals and Progress </h2></div>
+ <div class=" xl:flex xl:w-[1232px] mx-auto">
+     <!-- Card- 1 -->
+   <div class="mx-2 mt-8 bg-white rounded-xl overflow-hidden shadow-xl xl:w-[50%] xl:mx-4  xl:mt-[48px] group transition-transform transform xl:hover:scale-105 xl:hover:shadow-2xl">
+    <div>
+        <img class="h-full object-fill" src="./assets/sustainability-card1-img.webp" alt="Card-1 Image">
+    </div>
+    <div class="px-[24px] py-[2rem] xl:p-[40px] xl:flex xl:flex-col">
+        <h3 class="mb-2 text-[14px] font-[700] xl:text-[1rem] xl:mb-4 font-primary">2022 BUSINESS & SUSTAINABILITY REPORT</h3>
+        <div><p class="mb-8 text-[14px] font-[400] xl:text-[1rem] xl:leading-6 xl:mb-6 font-secondary">We build loved brands that bring joy to our consumers’ lives with beverage choices for all occasions, tastes and lifestyles. Our growth strategy is grounded in our core values and commitment to social and environmental responsibility.</p></div>
+        <div class="flex xl:mt-6 xl:group-hover:text-[#717171]">
+            <p class="font-[700] text-[16px] font-primary">See our Progress</p>
+            <div class="flex items-center ml-[10px]"><i class="fa-solid fa-arrow-right-long"></i></div>
+        </div>
+    </div>
+   </div>
+   <!-- Card- 2 -->
+   <div class="mx-2 mt-8 bg-white rounded-xl overflow-hidden shadow-xl xl:w-[50%] xl:mx-4  xl:mt-[48px] group transition-transform transform xl:hover:scale-105 xl:hover:shadow-2xl">
+    <div>
+        <img class="h-full object-fill" src="./assets/sustainability-card2-img.webp" alt="Card-1 Image">
+    </div>
+    <div class="px-[24px] py-[2rem] xl:p-[40px]">
+        <h3 class="mb-2 text-[14px] font-[700] xl:text-[1rem] xl:mb-4 font-primary">SUSTAINABILITY RESOURCE CENTER</h3>
+        <div><p class="mb-8 text-[14px] font-[400] xl:text-[1rem] xl:leading-6 xl:mb-6 font-secondary">At The Coca‑Cola Company, our sustainability goals and initiatives are anchored by our purpose — to refresh the world and make a difference — and are core to our growth strategy. Get an overview of our efforts to create a more sustainable business and better shared future.</p></div>
+        <div class="flex xl:mt-6 xl:group-hover:text-[#717171]">
+            <p class="font-[700] text-[16px] font-primary">Explore the Resource Center</p>
+            <div class="flex items-center ml-[10px]"><i class="fa-solid fa-arrow-right-long"></i></div>
+        </div>
+    </div>
+   </div>
+   </section>
+   <!-- Jobs & History -->
+   <section class="my-14 xl:mt-[10rem]">
+    <!-- it's Wrapper -->
+   <div class="flex flex-col">
+     <!-- Jobs -->
+     <div class=" xl:w-[1152px] xl:flex xl:flex-row-reverse xl:mx-auto">
+        <div class="-mx-6 xl:mx-0">
+            <img src="./assets/under-img-1.webp" alt="Jobs & History" class="xl:w-[640px] h-auto xl:rounded-2xl">
+        </div>
+        <div class="py-[32px] px-[24px] bg-white rounded-2xl relative bottom-20 xl:bottom-20 xl:left-16 xl:w-[544px] xl:h-[552px] xl:py-[64px] xl:px-[80px]">
+            <div class="flex flex-col">
+                <h3 class="text-[20px] font-[600] font-primary xl:text-[24px]">Coca-Cola Company Jobs</h3>
+                <p class="mt-[1rem] leading-6 text-[14px] font-[400] font-secondary xl:text-[16px] xl:leading-[26px]">We seek employees that embrace change, champion diversity and push for progress. Your skills and experience will help us navigate the ever-changing global landscape and guide us into the next chapter and beyond. </p>
+                <div class="mt-[36px] xl:mt-[206px] font-primary justify-center flex items-center text-sm font-[650] border-2 border-[#000000] rounded-full xl:hover:bg-[#D1D1D1] h-10  xl:w-[327px]  xl:cursor-pointer">
+                    <a href="#">Explore Jobs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- History -->
+    <div class="-mt-6 xl:mt-[10rem] xl:flex xl:w-[1152px] xl:mx-auto">
+        <div class="-mx-6 xl:mx-0">
+            <img src="./assets/under-img-2.webp" alt="Jobs & History" class=" h-auto xl:rounded-2xl xl:w-[640px]">
+        </div>
+        <div class="py-[32px] px-[24px] bg-white rounded-2xl relative bottom-20 xl:right-16 xl:w-[544px] xl:h-[552px] xl:py-[64px] xl:px-[80px]">
+            <div class="flex flex-col">
+                <h3 class="text-[20px] font-[600] font-primary xl:text-[24px]"> A Purpose-Driven History</h3>
+                <p class="mt-[1rem] leading-6 text-[14px] font-[400] font-secondary xl:text-[16px] xl:leading-[26px]">The Coca‑Cola Company’s purpose is to refresh the world and make a difference and we have remained true to that purpose for 137 years. 
+                    <br>
+                    <br>
+                    Our strategy is centered around people—our consumers and employees—and driving sustainable solutions that build resilience into our business to respond to current and future challenges, while creating positive change for the planet.
+                </p>
+                <div class="mt-[36px] font-primary justify-center flex items-center text-sm font-[650] border-2 border-[#000000] rounded-full xl:hover:bg-[#D1D1D1] h-10 xl:mt-[76px] xl:w-[327px]  xl:cursor-pointer">
+                    <a href="#">Learn more about us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+   <!-- Brands -->
+   <section class="mt-[-80px]">
+    <div>
+        <h2 class="font-[600] font-primary text-2xl text-center mt-[56px] xl:text-[2rem] xl:mt-[120px]">Explore Our Brands</h2>
+    </div>
+    <div class="grid grid-cols-2 gap-x-4 gap-y-7 mt-7 xl:grid-cols-3 xl:w-[864px] xl:mx-auto xl:gap-x-7">
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img1.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img2.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img3.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img4.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img5.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img6.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img7.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 cursor-pointer"><img src="./assets/brand-img8.webp" class="w-full" alt="Brand-Images"></div>
+        <div class="p-6 bg-white rounded-2xl shadow-xl transition-transform transform xl:hover:scale-105 hidden xl:block cursor-pointer"><img class="w-full h-auto" src="./assets/brand-img9.webp" alt="Brand-Images"></div>
+    </div>
+    <div class="mt-6 font-primary justify-center flex items-center text-sm font-[650] border-2 border-[#000000] rounded-full xl:hover:bg-[#D1D1D1] h-10 xl:mt-8 xl:w-[327px] xl:mx-auto xl:cursor-pointer">
+        <a href="#">View All</a>
+    </div>
+   </section>
+</main>
+<!-- footer -->
+<footer class="bg-[#000000] h-auto mt-14">
+    <!-- footer-wrapper -->
+    <div class="py-[56px] mx-6 xl:w-[1152px] xl:mx-auto xl:py-[72px] xl:relative">
+        <!-- Upper part -->
+        <div class="flex flex-col gap-14  sm:flex-row sm:justify-between sm:items-center">
+            <div class="px-[4px]">
+                <img src="./assets/footer-logo-img.svg" alt="Coca-Cola-LOGO">
+            </div>
+            <div class="px-[3px] sm:pt-[5px]">
+                <div class="border-2 cursor-pointer border-white rounded-full text-center  w-full h-[36px] sm:w-[235px] flex items-center justify-center">
+                    <a href="#">
+                    <p class="text-white font-primary font-[400] text-sm">United States | English</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Seperator -->
+        <div class="mt-[56px] rounded-full"><hr class="border-[#D5D5D5]"></div>
+        <!-- Mid part -->
+        <div class="grid grid-cols-2 gap-x-1 xl:grid-cols-[180px_180px_300px]">
+            <!-- About Us -->
+            <div class="mt-10 pl-[2px]">
+                <h4 class="text-[#D5D5D5] font-[600] text-[12px] font-secondary mb-6">ABOUT US</h4>
+               <div>
+                <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Media Center</a></p>
+                <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Coca-Cola Foundation</a></p>
+                <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Investors</a></p>
+                <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Policies and Practices</a></p>
+                <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Carriers</a></p>
+               </div>
+            </div>
+            <!-- Need Help -->
+            <div class="mt-10 xl:pl-[30px]">
+                <h4 class="text-[#D5D5D5] font-[600] text-[12px] font-secondary mb-6">NEED HELP?</h4>
+                <div>
+                    <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">FAQ</a></p>
+                    <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Contact Us</a></p>
+                    <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">International</a></p>
+                    
+                </div>
+            </div>
+            <!-- California -->
+            <div class="mt-6 pl-[2px] xl:mt-[36px] xl:items-center">
+                <div>
+                    <p class="mt-4 xl:mt-0"><a href="#" class="text-white text-sm font-[700] font-primary">California Notice at collection</a></p>
+                    <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Do Not Sell My Personal Information</a></p>
+                    <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Terms of Use</a></p>
+                    <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Privacy Policy</a></p>
+                    <p class="mt-4"><a href="#" class="text-white text-sm font-[700] font-primary">Cookies Settings</a></p>
+                </div>
+            </div>
+        </div>
+         <!-- Seperator -->
+         <div class="mt-[56px] rounded-full"><hr class="border-[#D5D5D5]"></div>
+         <!-- Lower part -->
+         <div class="mt-9">
+            <div class="flex gap-[15px] xl:absolute xl:top-[210px] xl:right-[5px] xl:items-center">
+                <div class="cursor-pointer">
+                    <img class="bg-white rounded-full p-[2px]" src="./assets/socialmedia-facbook.png" alt="">
+                </div>
+                <div class="cursor-pointer">
+                    <img class="bg-white rounded-full p-[2px]" src="./assets/socialmedia-linkedin.png" alt="">
+                </div class="cursor-pointer">
+                <div class="cursor-pointer">
+                    <img class="bg-white rounded-full p-[2px]" src="./assets/socialmedia-instagram.png" alt="">
+                </div>
+                <div class="cursor-pointer">
+                    <img class="bg-white rounded-full p-[2px]" src="./assets/socialmedia-youtube.png" alt="">
+                </div>
+            </div>
+            <div class="mt-7 xl:flex xl:justify-end">
+                <p class="text-white font-[400] text-[12px] font-primary">© 2024 The Coca‑Cola Company. All rights reserved.</p>
+            </div>
+         </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/d66c5f4ebc.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
