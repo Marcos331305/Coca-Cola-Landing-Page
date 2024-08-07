@@ -787,9 +787,19 @@ video {
   margin-right: 1.25rem;
 }
 
+.mx-56{
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+
 .mx-6{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.mx-7{
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
 }
 
 .mx-auto{
@@ -820,16 +830,6 @@ video {
 .my-32{
   margin-top: 8rem;
   margin-bottom: 8rem;
-}
-
-.mx-56{
-  margin-left: 14rem;
-  margin-right: 14rem;
-}
-
-.mx-7{
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
 }
 
 .-mt-4{
@@ -866,6 +866,10 @@ video {
 
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .ml-\[10px\]{
@@ -956,10 +960,6 @@ video {
   margin-top: 56px;
 }
 
-.ml-2{
-  margin-left: 0.5rem;
-}
-
 .block{
   display: block;
 }
@@ -1012,12 +1012,32 @@ video {
   height: 1rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-72{
+  height: 18rem;
+}
+
 .h-8{
   height: 2rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .h-9{
   height: 2.25rem;
+}
+
+.h-96{
+  height: 24rem;
 }
 
 .h-\[17px\]{
@@ -1050,58 +1070,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-1\/3{
-  height: 33.333333%;
-}
-
-.h-1\/5{
-  height: 20%;
-}
-
-.h-\[40\%\]{
-  height: 40%;
-}
-
-.h-96{
-  height: 24rem;
-}
-
-.h-\[595px\]{
-  height: 595px;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-1\/4{
-  height: 25%;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
-.h-80{
-  height: 20rem;
-}
-
-.h-72{
-  height: 18rem;
-}
-
-.h-6{
-  height: 1.5rem;
-}
-
-.h-64{
-  height: 16rem;
-}
-
-.h-\[695px\]{
-  height: 695px;
 }
 
 .w-1{
@@ -1302,20 +1270,20 @@ video {
   gap: 1.25rem;
 }
 
-.gap-7{
-  gap: 1.75rem;
-}
-
-.gap-\[15px\]{
-  gap: 15px;
-}
-
 .gap-6{
   gap: 1.5rem;
 }
 
+.gap-7{
+  gap: 1.75rem;
+}
+
 .gap-9{
   gap: 2.25rem;
+}
+
+.gap-\[15px\]{
+  gap: 15px;
 }
 
 .gap-x-1{
@@ -1683,6 +1651,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1691,6 +1664,11 @@ video {
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-\[19px\]{
@@ -1723,6 +1701,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-\[2rem\]{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1736,21 +1719,6 @@ video {
 .py-\[56px\]{
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pb-0{
@@ -1833,10 +1801,6 @@ video {
   padding-top: 3rem;
 }
 
-.pt-\[\]{
-  padding-top: ;
-}
-
 .pt-\[56px\]{
   padding-top: 56px;
 }
@@ -1889,6 +1853,10 @@ video {
   font-size: 16px;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .text-\[20px\]{
   font-size: 20px;
 }
@@ -1901,10 +1869,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
 }
 
 .font-\[400\]{
@@ -2197,6 +2161,10 @@ video {
     margin-top: 206px;
   }
 
+  .xl\:mt-\[32px\]{
+    margin-top: 32px;
+  }
+
   .xl\:mt-\[36px\]{
     margin-top: 36px;
   }
@@ -2211,14 +2179,6 @@ video {
 
   .xl\:mt-\[76px\]{
     margin-top: 76px;
-  }
-
-  .xl\:mt-\[26px\]{
-    margin-top: 26px;
-  }
-
-  .xl\:mt-\[32px\]{
-    margin-top: 32px;
   }
 
   .xl\:block{
@@ -2241,24 +2201,20 @@ video {
     height: 552px;
   }
 
-  .xl\:h-\[80px\]{
-    height: 80px;
-  }
-
-  .xl\:h-full{
-    height: 100%;
+  .xl\:h-\[645px\]{
+    height: 645px;
   }
 
   .xl\:h-\[695px\]{
     height: 695px;
   }
 
-  .xl\:h-\[645\]{
-    height: 645;
+  .xl\:h-\[80px\]{
+    height: 80px;
   }
 
-  .xl\:h-\[645px\]{
-    height: 645px;
+  .xl\:h-full{
+    height: 100%;
   }
 
   .xl\:w-\[1120px\]{
@@ -2279,6 +2235,10 @@ video {
 
   .xl\:w-\[327px\]{
     width: 327px;
+  }
+
+  .xl\:w-\[352px\]{
+    width: 352px;
   }
 
   .xl\:w-\[50\%\]{
@@ -2303,14 +2263,6 @@ video {
 
   .xl\:w-full{
     width: 100%;
-  }
-
-  .xl\:w-\[\]{
-    width: ;
-  }
-
-  .xl\:w-\[352px\]{
-    width: 352px;
   }
 
   .xl\:cursor-pointer{
