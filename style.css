@@ -822,6 +822,16 @@ video {
   margin-bottom: 8rem;
 }
 
+.mx-56{
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+
+.mx-7{
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .-mt-4{
   margin-top: -1rem;
 }
@@ -930,8 +940,8 @@ video {
   margin-top: 2.25rem;
 }
 
-.mt-\[-5px\]{
-  margin-top: -5px;
+.mt-\[-20px\]{
+  margin-top: -20px;
 }
 
 .mt-\[1rem\]{
@@ -946,8 +956,8 @@ video {
   margin-top: 56px;
 }
 
-.mt-\[-20px\]{
-  margin-top: -20px;
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .block{
@@ -1010,6 +1020,10 @@ video {
   height: 2.25rem;
 }
 
+.h-\[17px\]{
+  height: 17px;
+}
+
 .h-\[20px\]{
   height: 20px;
 }
@@ -1038,12 +1052,56 @@ video {
   height: 100%;
 }
 
-.h-\[px\]{
-  height: px;
+.h-1\/3{
+  height: 33.333333%;
 }
 
-.h-\[17px\]{
-  height: 17px;
+.h-1\/5{
+  height: 20%;
+}
+
+.h-\[40\%\]{
+  height: 40%;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-\[595px\]{
+  height: 595px;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-1\/4{
+  height: 25%;
+}
+
+.h-1\/2{
+  height: 50%;
+}
+
+.h-80{
+  height: 20rem;
+}
+
+.h-72{
+  height: 18rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-\[695px\]{
+  height: 695px;
 }
 
 .w-1{
@@ -1086,6 +1144,10 @@ video {
   width: 24rem;
 }
 
+.w-\[17px\]{
+  width: 17px;
+}
+
 .w-\[20px\]{
   width: 20px;
 }
@@ -1104,14 +1166,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.w-\[px\]{
-  width: px;
-}
-
-.w-\[17px\]{
-  width: 17px;
 }
 
 .min-w-max{
@@ -1254,6 +1308,14 @@ video {
 
 .gap-\[15px\]{
   gap: 15px;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
 }
 
 .gap-x-1{
@@ -1493,6 +1555,11 @@ video {
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-blue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1541,11 +1608,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .fill-black{
@@ -1676,6 +1738,21 @@ video {
   padding-bottom: 56px;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
@@ -1752,20 +1829,16 @@ video {
   padding-top: 1.75rem;
 }
 
-.pt-\[3\]{
-  padding-top: 3;
-}
-
-.pt-\[3reb\]{
-  padding-top: 3reb;
-}
-
-.pt-\[3re\]{
-  padding-top: 3re;
-}
-
 .pt-\[3rem\]{
   padding-top: 3rem;
+}
+
+.pt-\[\]{
+  padding-top: ;
+}
+
+.pt-\[56px\]{
+  padding-top: 56px;
 }
 
 .text-center{
@@ -1830,6 +1903,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .font-\[400\]{
   font-weight: 400;
 }
@@ -1872,6 +1949,10 @@ video {
 
 .leading-6{
   line-height: 1.5rem;
+}
+
+.leading-\[24px\]{
+  line-height: 24px;
 }
 
 .text-\[\#D5D5D5\]{
@@ -2132,6 +2213,14 @@ video {
     margin-top: 76px;
   }
 
+  .xl\:mt-\[26px\]{
+    margin-top: 26px;
+  }
+
+  .xl\:mt-\[32px\]{
+    margin-top: 32px;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -2158,6 +2247,18 @@ video {
 
   .xl\:h-full{
     height: 100%;
+  }
+
+  .xl\:h-\[695px\]{
+    height: 695px;
+  }
+
+  .xl\:h-\[645\]{
+    height: 645;
+  }
+
+  .xl\:h-\[645px\]{
+    height: 645px;
   }
 
   .xl\:w-\[1120px\]{
@@ -2204,6 +2305,14 @@ video {
     width: 100%;
   }
 
+  .xl\:w-\[\]{
+    width: ;
+  }
+
+  .xl\:w-\[352px\]{
+    width: 352px;
+  }
+
   .xl\:cursor-pointer{
     cursor: pointer;
   }
@@ -2238,6 +2347,10 @@ video {
 
   .xl\:justify-between{
     justify-content: space-between;
+  }
+
+  .xl\:gap-9{
+    gap: 2.25rem;
   }
 
   .xl\:gap-x-7{
@@ -2379,12 +2492,6 @@ video {
   .xl\:hover\:text-white:hover{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .xl\:hover\:shadow-2xl:hover{
-    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .group:hover .xl\:group-hover\:text-\[\#717171\]{
