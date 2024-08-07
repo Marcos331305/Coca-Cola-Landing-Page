@@ -14,46 +14,55 @@ function toggle(e) {
 }
 
 // Image Slider
-document.addEventListener("DOMContentLoaded", () => {
-  const slider = document.querySelector(".slider-container .flex");
-  const slides = document.querySelectorAll(
-    ".slider-container .flex .flex-shrink-0"
-  );
-  const indicators = document.querySelectorAll(".indicator-buttons button");
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to handle slider logic
+    const initializeSlider = (selector) => {
+        const slider = document.querySelector(selector);
+        const indicators = document.querySelectorAll(`${selector} ~ .indicator-buttons .indicator-button`);
+        
+        if (!slider || indicators.length === 0) return; // Early return if elements are not found
+        
+        let isScrolling;
+        
+        // Function to update the active indicator and snap to the closest slide
+        const updateSlider = () => {
+            const index = Math.round(slider.scrollLeft / slider.clientWidth);
+            slider.scrollTo({
+                left: index * slider.clientWidth,
+                behavior: 'smooth'
+            });
 
-  // Set up event listeners for each indicator button
-  indicators.forEach((indicator, index) => {
-    indicator.addEventListener("click", () => {
-      // Scroll to the corresponding slide
-      slider.scrollTo({
-        left: index * slider.clientWidth,
-        behavior: "smooth",
-      });
+            indicators.forEach((indicator, i) => {
+              if (i === index) {
+                indicator.classList.remove("bg-gray-300");
+                 indicator.classList.add("bg-blue-500");
+               } else {
+                 indicator.classList.remove("bg-blue-500");        
+                 indicator.classList.add("bg-gray-300");
+               }
+         });
+        };
 
-      // Update active indicator
-      updateActiveIndicator(index);
-    });
-  });
+        slider.addEventListener('scroll', () => {
+            window.clearTimeout(isScrolling);
+            isScrolling = setTimeout(() => {
+                updateSlider();
+            }, 150);
+        });
 
-  // Function to update the active indicator
-  function updateActiveIndicator(index) {
-    indicators.forEach((indicator, i) => {
-      if (i === index) {
-        indicator.classList.remove("bg-gray-300");
-        indicator.classList.add("bg-blue-500");
-      } else {
-        indicator.classList.remove("bg-blue-500");
-        indicator.classList.add("bg-gray-300");
-      }
-    });
-  }
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                slider.scrollTo({
+                    left: index * slider.clientWidth,
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-  // Detect scrolling to update the active indicator
-  slider.addEventListener("scroll", () => {
-    let currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
-    updateActiveIndicator(currentIndex);
-  });
+        updateSlider(); // Initial update
+    };
 
-  // Initialize the first indicator as active
-  updateActiveIndicator(0);
+    // Initialize sliders for both small and large screens
+    initializeSlider('.xl\\:hidden .slides'); // Small screen slider
+    initializeSlider('.xl\\:block .slides'); // Large screen slider
 });
