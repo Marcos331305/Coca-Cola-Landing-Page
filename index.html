@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coca-Cola Company: Refresh the World. Make a Difference</title>
     <link rel="stylesheet" href="style.css">
+    <!-- additional css -->
+    <!-- Icons -->
     <a href="https://www.flaticon.com/free-icons/universe" title="universe icons"></a>
-    <!-- font -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -51,11 +53,75 @@
 </header>
 <!-- Main -->
 <main class="xl:mt-20 mt-14 mx-6">
+    <!-- Image - Slider Section for Small Screen Devices-->
+    <section class="-mx-6 slider-container xl:hidden">
+        <!-- Slider - Wrapper -->
+        <div class="slides w-full flex overflow-auto pt-2 snap-x snap-mandatory no-scrollbar">
+           <div class="flex-shrink-0 w-full p-5 pb-0 snap-start">
+            <img src="./assets/slide-mob-img1.webp" alt="Slider-Image" class="sm:mx-auto">
+           </div>
+           <div class="flex-shrink-0 w-full p-5 pb-0 snap-start">
+            <img src="./assets/slide-mob-img2.webp" alt="Slider-Image" class="sm:mx-auto">
+           </div>
+           <div class="flex-shrink-0 w-full p-5 pb-0 snap-start">
+            <img src="./assets/slide-mob-img3.webp" alt="Slider-Image" class="sm:mx-auto">
+           </div>
+           <div class="flex-shrink-0 w-full p-5 pb-0 snap-start">
+            <img src="./assets/slide-mob-img4.webp" alt="Slider-Image" class="sm:mx-auto">
+           </div>
+           <div class="flex-shrink-0 w-full p-5 pb-0 snap-start">
+            <img src="./assets/slide-mob-img5.webp" alt="Slider-Image" class="sm:mx-auto">
+           </div>
+           <div class="flex-shrink-0 w-full p-5 pb-0 snap-start">
+            <img src="./assets/slide-mob-img6.webp" alt="Slider-Image" class="sm:mx-auto">
+           </div>
+        </div>
+        <div class="indicator-buttons flex justify-center gap-4">
+            <button class="indicator-button border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class="indicator-button border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class="indicator-button border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class="indicator-button border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class="indicator-button border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class="indicator-button border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+        </div>
+    </section>
+    <!-- Image - Slider for large screen Devices -->
+    <section class="hidden xl:block">
+        <!-- Slider - Wrapper -->
+        <div class=" flex overflow-auto snap-mandatory snap-x">
+            <div class="flex-shrink-0 w-full snap-start">
+                <img src="./assets/slide-img-1.webp" alt="Slide-Image" class="mx-auto">
+            </div>
+            <div class="flex-shrink-0 w-full snap-start">
+                <img src="./assets/slide-img-2.webp" alt="Slide-Image" class="mx-auto">
+            </div>
+            <div class="flex-shrink-0 w-full snap-start">
+                <img src="./assets/slide-img-3.webp" alt="Slide-Image" class="mx-auto">
+            </div>
+            <div class="flex-shrink-0 w-full snap-start">
+                <img src="./assets/slide-img-4.webp" alt="Slide-Image" class="mx-auto">
+            </div>
+            <div class="flex-shrink-0 w-full snap-start">
+                <img src="./assets/slide-img-5.webp" alt="Slide-Image" class="mx-auto">
+            </div>
+            <div class="flex-shrink-0 w-full snap-start">
+                <img src="./assets/slide-img-6.webp" alt="Slide-Image" class="mx-auto">
+            </div>
+        </div>
+        <div class=" flex justify-center gap-4">
+            <button class=" border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class=" border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class=" border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class=" border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class=" border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+            <button class=" border-[1px] border-black bg-gray-300 h-[20px] w-[20px] rounded-full"></button>
+        </div>
+    </section>
    <!-- Sustainability Goals -->
    <section>
        <!-- Heading -->
        <div class="flex justify-center items-center pt-14"><h2 class="text-center text-2xl font-[600] xl:text-[2rem] font-primary">Our Sustainability Goals and Progress </h2></div>
- <div class=" xl:flex xl:w-[1232px] mx-auto">
+ <div class=" xl:flex xl:w-[1120px] mx-auto">
      <!-- Card- 1 -->
    <div class="mx-2 mt-8 bg-white rounded-xl overflow-hidden shadow-xl xl:w-[50%] xl:mx-4  xl:mt-[48px] group transition-transform transform xl:hover:scale-105 xl:hover:shadow-2xl">
     <div>
@@ -90,43 +156,47 @@
     <!-- it's Wrapper -->
    <div class="flex flex-col">
      <!-- Jobs -->
-     <div class=" xl:w-[1152px] xl:flex xl:flex-row-reverse xl:mx-auto">
-        <div class="-mx-6 xl:mx-0">
-            <img src="./assets/under-img-1.webp" alt="Jobs & History" class="xl:w-[640px] h-auto xl:rounded-2xl">
-        </div>
-        <div class="py-[32px] px-[24px] bg-white rounded-2xl relative bottom-20 xl:bottom-20 xl:left-16 xl:w-[544px] xl:h-[552px] xl:py-[64px] xl:px-[80px]">
-            <div class="flex flex-col">
-                <h3 class="text-[20px] font-[600] font-primary xl:text-[24px]">Coca-Cola Company Jobs</h3>
-                <p class="mt-[1rem] leading-6 text-[14px] font-[400] font-secondary xl:text-[16px] xl:leading-[26px]">We seek employees that embrace change, champion diversity and push for progress. Your skills and experience will help us navigate the ever-changing global landscape and guide us into the next chapter and beyond. </p>
-                <div class="mt-[36px] xl:mt-[206px] font-primary justify-center flex items-center text-sm font-[650] border-2 border-[#000000] rounded-full xl:hover:bg-[#D1D1D1] h-10  xl:w-[327px]  xl:cursor-pointer">
-                    <a href="#">Explore Jobs</a>
+     <div class=" xl:w-full xl:flex xl:flex-row-reverse justify-center">
+        <div class="xl:flex xl:flex-row-reverse xl:w-[1155px] xl:mr-[58px]">
+            <div class="-mx-6 xl:mx-0">
+                <img src="./assets/under-img-1.webp" alt="Jobs & History" class="xl:w-[640px] h-auto xl:rounded-2xl">
+            </div>
+            <div class="py-[32px] px-[24px] bg-white rounded-2xl relative bottom-20 xl:bottom-20 xl:left-16 xl:w-[544px] xl:h-[552px] xl:py-[64px] xl:px-[80px]">
+                <div class="flex flex-col">
+                    <h3 class="text-[20px] font-[600] font-primary xl:text-[24px]">Coca-Cola Company Jobs</h3>
+                    <p class="mt-[1rem] leading-6 text-[14px] font-[400] font-secondary xl:text-[16px] xl:leading-[26px]">We seek employees that embrace change, champion diversity and push for progress. Your skills and experience will help us navigate the ever-changing global landscape and guide us into the next chapter and beyond. </p>
+                    <div class="mt-[36px] xl:mt-[206px] font-primary justify-center flex items-center text-sm font-[650] border-2 border-[#000000] rounded-full xl:hover:bg-[#D1D1D1] h-10  xl:w-[327px]  xl:cursor-pointer">
+                        <a href="#">Explore Jobs</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- History -->
-    <div class="-mt-6 xl:mt-[10rem] xl:flex xl:w-[1152px] xl:mx-auto">
-        <div class="-mx-6 xl:mx-0">
-            <img src="./assets/under-img-2.webp" alt="Jobs & History" class=" h-auto xl:rounded-2xl xl:w-[640px]">
-        </div>
-        <div class="py-[32px] px-[24px] bg-white rounded-2xl relative bottom-20 xl:right-16 xl:w-[544px] xl:h-[552px] xl:py-[64px] xl:px-[80px]">
-            <div class="flex flex-col">
-                <h3 class="text-[20px] font-[600] font-primary xl:text-[24px]"> A Purpose-Driven History</h3>
-                <p class="mt-[1rem] leading-6 text-[14px] font-[400] font-secondary xl:text-[16px] xl:leading-[26px]">The Coca‑Cola Company’s purpose is to refresh the world and make a difference and we have remained true to that purpose for 137 years. 
-                    <br>
-                    <br>
-                    Our strategy is centered around people—our consumers and employees—and driving sustainable solutions that build resilience into our business to respond to current and future challenges, while creating positive change for the planet.
-                </p>
-                <div class="mt-[36px] font-primary justify-center flex items-center text-sm font-[650] border-2 border-[#000000] rounded-full xl:hover:bg-[#D1D1D1] h-10 xl:mt-[76px] xl:w-[327px]  xl:cursor-pointer">
-                    <a href="#">Learn more about us</a>
+    <div class="-mt-6 xl:mt-[12rem] xl:flex xl:justify-center xl:mx-auto xl:w-full">
+        <div class="xl:flex xl:w-[1155px] xl:ml-[68px]">
+            <div class="-mx-6 xl:mx-0">
+                <img src="./assets/under-img-2.webp" alt="Jobs & History" class=" h-auto xl:rounded-2xl xl:w-[640px]">
+            </div>
+            <div class="py-[32px] px-[24px] bg-white rounded-2xl relative bottom-20 xl:right-16 xl:w-[544px] xl:h-[552px] xl:py-[64px] xl:px-[80px]">
+                <div class="flex flex-col">
+                    <h3 class="text-[20px] font-[600] font-primary xl:text-[24px]"> A Purpose-Driven History</h3>
+                    <p class="mt-[1rem] leading-6 text-[14px] font-[400] font-secondary xl:text-[16px] xl:leading-[26px]">The Coca‑Cola Company’s purpose is to refresh the world and make a difference and we have remained true to that purpose for 137 years. 
+                        <br>
+                        <br>
+                        Our strategy is centered around people—our consumers and employees—and driving sustainable solutions that build resilience into our business to respond to current and future challenges, while creating positive change for the planet.
+                    </p>
+                    <div class="mt-[36px] font-primary justify-center flex items-center text-sm font-[650] border-2 border-[#000000] rounded-full xl:hover:bg-[#D1D1D1] h-10 xl:mt-[76px] xl:w-[327px]  xl:cursor-pointer">
+                        <a href="#">Learn more about us</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
    </div>
 </section>
    <!-- Brands -->
-   <section class="mt-[-80px]">
+   <section class="mt-[-5px]">
     <div>
         <h2 class="font-[600] font-primary text-2xl text-center mt-[56px] xl:text-[2rem] xl:mt-[120px]">Explore Our Brands</h2>
     </div>
