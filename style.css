@@ -733,10 +733,6 @@ video {
   top: 57px;
 }
 
-.top-1\/2{
-  top: 50%;
-}
-
 .-z-20{
   z-index: -20;
 }
@@ -840,6 +836,11 @@ video {
   margin-right: 1.75rem;
 }
 
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -906,8 +907,20 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-0{
+  margin-left: 0px;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
+}
+
+.ml-2\.5{
+  margin-left: 0.625rem;
 }
 
 .ml-\[10px\]{
@@ -1118,6 +1131,10 @@ video {
   width: 2.5rem;
 }
 
+.w-2{
+  width: 0.5rem;
+}
+
 .w-3{
   width: 0.75rem;
 }
@@ -1201,11 +1218,6 @@ video {
 
 .-translate-y-1{
   --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-1\/2{
-  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1327,6 +1339,10 @@ video {
 
 .gap-\[15px\]{
   gap: 15px;
+}
+
+.gap-\[16\.5px\]{
+  gap: 16.5px;
 }
 
 .gap-x-1{
@@ -1844,10 +1860,6 @@ video {
   padding-top: 3rem;
 }
 
-.pt-\[56px\]{
-  padding-top: 56px;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1896,12 +1908,18 @@ video {
   font-size: 16px;
 }
 
-.text-\[18px\]{
-  font-size: 18px;
-}
-
 .text-\[20px\]{
   font-size: 20px;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm{
@@ -1958,13 +1976,14 @@ video {
   line-height: 1.5rem;
 }
 
-.leading-\[24px\]{
-  line-height: 24px;
-}
-
 .text-\[\#D5D5D5\]{
   --tw-text-opacity: 1;
   color: rgb(213 213 213 / var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-red-600{
@@ -2043,6 +2062,10 @@ video {
 
 .no-scrollbar::-webkit-scrollbar{
   display: none;
+}
+
+.indicator.active{
+  background-color: #3B81F6;
 }
 
 @media (min-width: 640px){
@@ -2156,6 +2179,10 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .xl\:ml-\[-0\.5rem\]{
+    margin-left: -0.5rem;
+  }
+
   .xl\:ml-\[10px\]{
     margin-left: 10px;
   }
@@ -2174,6 +2201,10 @@ video {
 
   .xl\:mt-0{
     margin-top: 0px;
+  }
+
+  .xl\:mt-14{
+    margin-top: 3.5rem;
   }
 
   .xl\:mt-20{
@@ -2200,12 +2231,12 @@ video {
     margin-top: 12rem;
   }
 
-  .xl\:mt-\[206px\]{
-    margin-top: 206px;
+  .xl\:mt-\[2\.5rem\]{
+    margin-top: 2.5rem;
   }
 
-  .xl\:mt-\[32px\]{
-    margin-top: 32px;
+  .xl\:mt-\[206px\]{
+    margin-top: 206px;
   }
 
   .xl\:mt-\[36px\]{
@@ -2236,6 +2267,10 @@ video {
     display: none;
   }
 
+  .xl\:h-\[20px\]{
+    height: 20px;
+  }
+
   .xl\:h-\[24px\]{
     height: 24px;
   }
@@ -2260,6 +2295,10 @@ video {
     height: 100%;
   }
 
+  .xl\:w-\[1105px\]{
+    width: 1105px;
+  }
+
   .xl\:w-\[1120px\]{
     width: 1120px;
   }
@@ -2274,6 +2313,10 @@ video {
 
   .xl\:w-\[1240px\]{
     width: 1240px;
+  }
+
+  .xl\:w-\[20px\]{
+    width: 20px;
   }
 
   .xl\:w-\[327px\]{
@@ -2344,8 +2387,8 @@ video {
     justify-content: space-between;
   }
 
-  .xl\:gap-9{
-    gap: 2.25rem;
+  .xl\:gap-2{
+    gap: 0.5rem;
   }
 
   .xl\:gap-x-7{
@@ -2377,6 +2420,10 @@ video {
 
   .xl\:p-0{
     padding: 0px;
+  }
+
+  .xl\:p-10{
+    padding: 2.5rem;
   }
 
   .xl\:p-\[10px\]{
@@ -2414,6 +2461,14 @@ video {
     padding-left: 30px;
   }
 
+  .xl\:pt-\[120px\]{
+    padding-top: 120px;
+  }
+
+  .xl\:pt-\[90px\]{
+    padding-top: 90px;
+  }
+
   .xl\:text-\[16px\]{
     font-size: 16px;
   }
@@ -2428,6 +2483,11 @@ video {
 
   .xl\:text-\[2rem\]{
     font-size: 2rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .xl\:leading-6{
@@ -2492,5 +2552,10 @@ video {
   .group:hover .xl\:group-hover\:text-\[\#717171\]{
     --tw-text-opacity: 1;
     color: rgb(113 113 113 / var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-gray-500{
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
   }
 }

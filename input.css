@@ -3,3 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.indicator.active{
+    background-color: #3B81F6;
+}

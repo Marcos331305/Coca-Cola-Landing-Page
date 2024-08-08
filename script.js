@@ -68,69 +68,57 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // News - Slider Handling
-document.addEventListener('DOMContentLoaded', () => {
-  const slider = document.querySelector('.cards-container');
-  const indicators = document.querySelectorAll('.indicator-button');
-  const leftButton = document.querySelector('.left-button');
-  const rightButton = document.querySelector('.right-button');
-  
-  if (!slider || indicators.length === 0 || !leftButton || !rightButton) return; // Early return if elements are not found
-  
+document.addEventListener('DOMContentLoaded', function() {
+  const newsCards = document.getElementById('news-cards');
+  const indicators = document.querySelectorAll('.indicator');
   let isScrolling;
-  
-  // Function to update the active indicator and snap to the closest slide
-  const updateSlider = () => {
-      const index = Math.round(slider.scrollLeft / slider.clientWidth);
-      slider.scrollTo({
-          left: index * slider.clientWidth,
-          behavior: 'smooth'
-      });
+  const threshold = 0.5; // Adjust this threshold as needed
 
-      indicators.forEach((indicator, i) => {
-          if (i === index) {
-              indicator.classList.add('bg-blue-500');
-              indicator.classList.remove('bg-gray-300');
+  function updateIndicators(activeIndex) {
+      indicators.forEach((indicator, index) => {
+          if (index === activeIndex) {
+              indicator.classList.add('active');
           } else {
-              indicator.classList.remove('bg-blue-500');
-              indicator.classList.add('bg-gray-300');
+              indicator.classList.remove('active');
           }
       });
-  };
+  }
 
-  // Add scroll event listener to the slider
-  slider.addEventListener('scroll', () => {
+  function scrollToCard(index) {
+      const cardWidth = newsCards.scrollWidth / indicators.length;
+      const scrollPosition = cardWidth * index;
+      newsCards.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+      });
+      updateIndicators(index);
+  }
+
+  newsCards.addEventListener('scroll', function() {
       window.clearTimeout(isScrolling);
-      isScrolling = setTimeout(updateSlider, 66);
-  });
 
-  // Add click event listeners to indicators
-  indicators.forEach((indicator, index) => {
-      indicator.addEventListener('click', () => {
-          slider.scrollTo({
-              left: index * slider.clientWidth,
+      isScrolling = setTimeout(function() {
+          const cardWidth = newsCards.scrollWidth / indicators.length;
+          const scrollPosition = newsCards.scrollLeft;
+          const activeIndex = Math.round(scrollPosition / cardWidth);
+          const nearestCardPosition = cardWidth * activeIndex;
+
+          // Snap to the nearest card
+          newsCards.scrollTo({
+              left: nearestCardPosition,
               behavior: 'smooth'
           });
+
+          updateIndicators(activeIndex);
+      }, 100); // Adjust the debounce delay as needed
+  });
+
+  indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', function() {
+          scrollToCard(index);
       });
   });
 
-  // Add click event listeners to left and right buttons
-  leftButton.addEventListener('click', () => {
-      const currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
-      if (currentIndex > 0) {
-          slider.scrollTo({
-              left: (currentIndex - 1) * slider.clientWidth,
-              behavior: 'smooth'
-          });
-      }
-  });
-
-  rightButton.addEventListener('click', () => {
-      const currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
-      if (currentIndex < indicators.length - 1) {
-          slider.scrollTo({
-              left: (currentIndex + 1) * slider.clientWidth,
-              behavior: 'smooth'
-          });
-      }
-  });
+  // Initialize indicators on page load
+  scrollToCard(0);
 });
